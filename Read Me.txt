@@ -1,0 +1,7 @@
+﻿Proje NTier mimari ile kuruldu entities katmanında base repository ile birlikte ondan inheritance alan classlar mevcuttur.
+Map katmanında classlarımızı maplediğimiz katman,DAL(Data Access Layer) veri tabanı ile haberleştiğimiz katman ve fake dataları
+init classı ile oluşturulmuştur,BLL(Businesses Logical Layer) iş akışının ayarlandığı katman son olarak MVCUI katmanı mvc ile 
+hazırlanmış olan User Interface katmanı customer ürünleri listeliyebilir,SysAdmin tüm yetkiye sahip olarak bütün ürünleri
+güncelleyebilir,Admin ise sadece kendine ait olan ürünleri listeliyebilir,index sayfasından giriş yapılabilir kullanıcı üye 
+olabilir ona göre gerekli yetkiyle ürünlere erişebilir,ürün ekleme silme kendi markana ait kullanıcı ekleme ve bunların
+sayfalandırılması yapılmadı,verilen proje tanımında olmadığı için ve verilen zamanda oluşturulması uzun sürceği için

@@ -118,7 +118,7 @@
                 <label class="ml-2">Name</label>
                 <label class="ml-2">Description</label>
                 <label class="ml-2">Price</label>
-                <label class="ml-2">Like</label>
+                
             </div>
             @if (Model.AppUser.Role == UserRole.Customer)
             {
@@ -132,7 +132,7 @@
                         <label type="text" class="ml-2">@item.Name</label>
                         <label type="text" class="ml-2">@item.Description</label>
                         <label type="text" class="ml-2">@item.Price</label>
-                        <label type="text" class="ml-2">@item.Like</label>
+                        
 
                     </div>
 
@@ -154,7 +154,6 @@
                             <input name="name" type="text" class="ml-2" value="@item.Name" />
                             <input name="description" type="text" class="ml-2" value="@item.Description" />
                             <input name="price" type="text" class="ml-2" value="@item.Price" />
-                            <label type="text" class="ml-2">@item.Like</label>
                             <input name="id" type="hidden" value="@item.ID" />
                             <div class="">
                                 <button class=" mt-16 bg-myblue-200 hover:bg-myorange text-mywhite font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline" style="height:50px;width:200px">
@@ -180,7 +179,6 @@
                             <input name="name" type="text" class="ml-2" value="@item.Name" />
                             <input name="description" type="text" class="ml-2" value="@item.Description" />
                             <input name="price" type="text" class="ml-2" value="@item.Price" />
-                            <label type="text" class="ml-2">@item.Like</label>
                             <input name="id" type="hidden" value="@item.ID" />
                             
                                 <button  class=" mt-16 bg-myblue-200 hover:bg-myorange text-mywhite font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline" style="height:50px;width:200px">

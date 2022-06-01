@@ -14,7 +14,7 @@ namespace Project.Entities.Models
 
         public decimal Price { get; set; }
 
-        public int Like { get; set; }
+        
 
         // Relational Properties
 
