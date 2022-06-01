@@ -1,0 +1,161 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ecommerce</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ecommerce" name="keywords">
+    <meta content="ecommerce" name="description">
+
+    
+
+    <!--Tailwind css-->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+
+        tailwind.config = {
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        myorange: '#06b6d4',
+                        myblue: {
+                            100: '#0f172a',
+                            200: '#1e3a8a',
+                            300: '#9CC4E4',
+                            400: '#343838',
+                            500: '#00DFFC',
+                            600: '#005F6B'
+
+                        },
+
+                        mywhite: '#E9F2F9',
+
+                        myred: '#99173C',
+
+                        mygrey: {
+
+                            100: '#0f172a',
+                            200: '#1e293b',
+                        },
+
+                        myyellow: {
+
+                            100: '#06b6d4',
+                            200: '#22d3ee',
+                        }
+
+
+                    },
+
+                    fontFamily: {
+
+                        inter: ['Inter', 'sans-serif']
+
+
+                    },
+
+                    fontSize: {
+
+                        xs: '0.8125rem'
+
+
+                    },
+
+                    spacing: {
+
+                        '100': '36rem'
+                    }
+
+
+                }
+
+            }
+
+
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+
+    
+    
+</head>
+
+<body>
+    <!-- Topbar Start -->
+
+    <header>
+
+
+        <div class="bg-myblue-100 flex pl-4   mx-auto  text-teal-600 font-mono text-xl">
+
+            <label>My E-Commerce</label>
+
+
+        </div>
+
+        <div>
+
+            @using (Html.BeginForm("index", "Home", FormMethod.Post))
+            {
+            <div class="mt-16 ml-16 bg-sky-400 text-center" style="width:300px;height:300px">
+
+                <div class="grid grid-raw-2">
+                    <label class=" text-xl text-teal-700">User Name</label>
+                    <input name="userName" class="border-4 border-green-500 rounded-full " type="text" />
+                </div>
+
+                <div class="grid grid-raw-2 mt-4">
+                    <label class=" text-xl text-teal-700">Password</label>
+                    <input name="password" class="border-4 border-green-500 rounded-full " type="text" />
+                </div>
+
+
+                <div class="">
+                    <button class=" mt-16 bg-myblue-200 hover:bg-myorange text-mywhite font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline" style="height:50px;width:200px">
+                        Sign In
+                    </button>
+                </div>
+
+                <div class="mt-2">
+                    <a href="/Home/SingUp" class=" mt-16 bg-myblue-200 hover:bg-myorange text-mywhite font-bold  py-2 px-4 rounded focus:outline-none focus:shadow-outline" style="height:50px;width:200px">
+                        Sign Up
+                    </a>
+                </div>
+
+
+                @ViewBag.fail
+
+
+
+
+            </div>
+
+
+
+
+
+
+            }
+
+        </div>
+    </header>
+    </body>
+</html>
+
+
